@@ -12,7 +12,7 @@ def convert_nii_to_hdf5(nii_file_path, output_folder):
     nii_image = nib.load(nii_file_path)
     image_data = nii_image.get_fdata()
 
-    # Convert to a regular NumPy array (if necessary)
+    # Convert to a regular NumPy array
     regular_array = np.array(image_data)
 
     # Filename for the HDF5 file
